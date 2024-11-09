@@ -1,4 +1,6 @@
 # gnn-link_prediction-cora
+This repo provides abstraction and structure to develop an analysis of Cora dataset.
+
 ```
 PŁ/Sekcja AI SKN/GNN1/Exercises/
 ├── Exercise 1 - basic graph exploration and metrics
