@@ -1,14 +1,17 @@
 # gnn-link_prediction-cora
+```
 PŁ/Sekcja AI SKN/GNN1/Exercises/
 ├── Exercise 1 - basic graph exploration and metrics
 ├── Exercise 2 (this repo) -> Publication datasets -> Cora (with timestamps)
 └──
+```
 
 # To contribute
 clone this repo
 
 ```bash
-git checkout -b yourBranch # for example git checkout -b jaccard_coeff 
+git branch --list # optional
+git checkout -b yourBranch # for example git checkout -b dev/jaccard_coeff or prod/jaccard_coeff
 # this is because afterwards when you're done with your changes, we can merge it to the main branch
 
 # implement your contribution
@@ -26,6 +29,7 @@ Call them in run_analysis.py similar to CommonNeighbors.
 New datasets can be added to /src/data/data_loader.py and downloader.py, to config.yaml. 
 
 # Project structure
+```
 src/
 ├── run_analysis.py
 ├── data/
@@ -49,6 +53,7 @@ src/
 └── tests/
     └── __init__.py
     └── test_metrics.py
+```
 
 # Use
 ## Venv
@@ -86,6 +91,7 @@ python -m run_analysis
 ## Common Neighbors
 <!-- TODO: move to docs/ -->
 ### Sample output
+```
 2024-11-09 15:56:31,222 - data.downloader - INFO - Successfully loaded Cora dataset
 2024-11-09 15:56:31,223 - __main__ - INFO - Dataset loaded: 2708 nodes, 10556 edges
 2024-11-09 15:56:32,366 - __main__ - INFO - Generated 3660000 candidate pairs
@@ -96,6 +102,7 @@ Top 100 predicted links:
 2024-11-09 15:56:37,730 - __main__ - INFO - Node 1986 - Node 1701: Score = 11
 2024-11-09 15:56:37,730 - __main__ - INFO - Node 507 - Node 1542: Score = 11
 2024-11-09 15:56:37,732 - __main__ - INFO - Node 1483 - Node 2450: Score = 10
+```
 
 ### Explanation
 The score represents the number of common neighbors between two nodes
