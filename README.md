@@ -24,6 +24,7 @@ git push origin yourBranch
 ```
 
 Add new classes to /src/metrics/
+
 Call them in run_analysis.py similar to CommonNeighbors.
 
 New datasets can be added to /src/data/data_loader.py and downloader.py, to config.yaml. 
@@ -105,6 +106,6 @@ Top 100 predicted links:
 ```
 
 ### Explanation
-The score represents the number of common neighbors between two nodes
-For example, node 1623 and node 306 have a score of 20, meaning they share 20 common neighbors despite not being directly connected
-Higher scores suggest stronger likelihood of a connection as these nodes have more mutual connections
+- The score represents the number of common neighbors between two nodes.
+- For example, node 1623 and node 306 have a score of 20, meaning they share 20 common neighbors despite not being directly connected.
+- Higher scores suggest stronger likelihood of a connection as these nodes have more mutual connections.
