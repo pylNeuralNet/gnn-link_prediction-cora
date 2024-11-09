@@ -1,0 +1,48 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Link Prediction Analysis",
+            "type": "python",
+            "request": "launch",
+            "module": "src.run_analysis",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "python": "${workspaceFolder}/.venv/bin/python",  // Unix
+            "windows": {
+                "python": "${workspaceFolder}\\.venv\\Scripts\\python.exe"  // Windows
+            },
+            "args": [],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Run Tests",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "python": "${workspaceFolder}/.venv/bin/python",  // Unix
+            "windows": {
+                "python": "${workspaceFolder}\\.venv\\Scripts\\python.exe"  // Windows
+            },
+            "args": [
+                "tests/",
+                "-v"
+            ],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Run All",
+            "configurations": ["Run Tests", "Run Link Prediction Analysis"]
+        }
+    ]
+}

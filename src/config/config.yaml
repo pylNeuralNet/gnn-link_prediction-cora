@@ -1,0 +1,21 @@
+paths:
+  data_root: "data/" # customize!
+  logs: "logs/" # logs/ will be git ignored, change if you want to push your results. Also currently logs are being appended
+
+data:
+  datasets:
+    cora:
+      enabled: true
+      splits:
+        train: 0.8
+        val: 0.1
+        test: 0.1
+
+metrics:
+  common_neighbors:
+    enabled: true
+    top_k: 100
+
+logging:
+  level: "INFO"
+  file: "logs/analysis.log"
