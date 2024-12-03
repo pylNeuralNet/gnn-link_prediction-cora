@@ -1,5 +1,5 @@
 paths:
-  data_root: "data/" # customize!
+  data_root: "E:datasets/" # customize!
   logs: "logs/" # logs/ will be git ignored, change if you want to push your results. Also currently logs are being appended
 
 data:

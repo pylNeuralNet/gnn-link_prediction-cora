@@ -4,7 +4,9 @@ This repo provides abstraction and structure to develop an analysis of Cora data
 ```
 PŁ/Sekcja AI SKN/GNN1/Exercises/
 ├── Exercise 1 - basic graph exploration and metrics
-├── Exercise 2 (this repo) -> Publication datasets -> Cora (with timestamps)
+├── Exercise 2 (this repo) - Publication datasets -> Cora (with timestamps)
+├── Exercise 3 - Deepwalk - Notebooks dir
+...
 └──
 ```
 
@@ -18,7 +20,7 @@ git checkout -b yourBranch # for example git checkout -b dev/jaccard_coeff or pr
 
 # implement your contribution
 # (from root)
-git add -A # or each file that you want to stage separately
+git add -A # or each file that you want to stage separately. Do not add the data/Cora or any other dataset!
 git status # optional - to verify if you added the right files
 git commit # then edit commit message, in vsc a new window pops out. The title should be a concise slogan of the change, description should detail for example features, what they do and what for
 git push origin yourBranch
